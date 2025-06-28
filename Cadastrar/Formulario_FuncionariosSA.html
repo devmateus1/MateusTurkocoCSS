@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS_EXRTERNO.css" media="all">
+    <title>Document</title>
+
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: skyblue;
+        }
+
+        li{
+            float:left;
+        }
+
+        li a, .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: darkblue;          
+        }
+
+        li.dropdown{
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: burlywood;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: lightblue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: bisque;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body >
+    
+    <ul>
+        <li><a href="ExemploMenuCSS.html">Inicio</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">DropDown</a>
+            <div class="dropdown-content">
+                <a href="Formulario_FuncionariosSA.html">Funcionarios</a>
+                <a href="#">Produto(Propriedade do Vinicius)</a> 
+                <a href="#">Fornecedor(Propriedade Do Matheus de Campos)</a>    
+            </div>            
+        </li>
+    </ul>
+
+
+
+
+    <center>
+            <center>
+                <table>
+                    <tr>
+                        <td rowspan=2> <center><img src="imagem/logo.jpg" height="50" width="50"> </center></td>
+                       <td> <center> Cadastro </center></td>
+            
+                    </tr>
+                    <tr>
+                        <td><center> Funcionarios </center></td>
+                    </tr>
+
+                    <tr align="left">
+                        <td><label for="id_fornecedor">Nome Empresarial</label></td>
+                        <td><input type="text" id="id_fornecedor" name="id_fornecedor"></td>
+    
+                    </tr>
+        
+                        <tr align="left">
+                            <td><label for="nome_empresa_fornecedor">Nome de Fantasia</label></td>
+                            <td><input type="text" id="nome_empresa_fornecedor" name="nome_empresa_fornecedor"></td>
+        
+                        </tr>
+        
+                        <tr align="left">
+                            <td><label for="cnpj_fornecedor">Cnpj da Empresa</label></td>
+                            <td><input type="text" id="cnpj_fornecedor" name="cnpj_fornecedor"></td>
+        
+        
+                        </tr>
+        
+                        <tr align="left">
+                            <td><label for="rua_fornecedor">Rua </label></td>
+                            <td><input type="text" id="rua_fornecedor" name="rua_fornecedor"></td>
+        
+                        </tr>
+                        <tr align="left">
+                            <td><label for="bairro_fornecedor">Bairro </label></td>
+                            <td><input type="text" id="data_lancamento" name="data_lancamento"></td>
+        
+                        </tr>
+                        <tr align="left">
+                            <td><label for="cidade_fornecedor">Cidade </label></td>
+                            <td><input type="text" id="cidade_fornecedor" name="cidade_fornecedor"></td>
+                        </tr>
+                        
+                        <tr align="left">
+                            <td><label for="estado_fornecedor">Estado(UF) </label></td>
+                            <td><input type="text" id="estado_fornecedor" name="estado_fornecedor"></td>
+                        </tr>
+
+                        <tr align="left">
+                            <td colspan="2">
+                                <button>Cadastrar Fornecedor</button>
+                                <br/>
+                                <button>Voltar</button>
+                            </td>
+                        </tr>
+        </table>
+    </center>
+    <br/>
+</body>
+</html>
